@@ -35,7 +35,7 @@ export const Post = (props: Props) => {
   };
   useEffect(() => {
     getLikes();
-  });
+  }, []);
   const [user] = useAuthState(auth);
   const addLike = async () => {
     try {
